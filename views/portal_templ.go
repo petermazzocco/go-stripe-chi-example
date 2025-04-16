@@ -41,7 +41,7 @@ func Portal() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div>yay you made it to the portal</div>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"flex flex-col items-center justify-center gap-4\">yay you made it to the portal <button hx-post=\"/subscribe\" hx-target=\"body\" hx-swap=\"outerHTML\" type=\"button\" class=\"bg-white px-2.5 py-1.5 w-fit text-black rounded-md\">Create Subscription</button> <a href=\"/logout/google\">Sign Out </a></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
